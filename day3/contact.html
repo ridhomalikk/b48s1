@@ -15,6 +15,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("6EUhZL-PhKyvw6aBm");
+   })();
+</script>
 </head>
 <body>
     <nav>
@@ -23,7 +32,7 @@
             <li>
               <a href=""><img src="images/logo.png" alt="" /></a>
             </li>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="#">My Project</a></li>
           </ul>
         </div>
@@ -33,34 +42,34 @@
         </div>
       </nav>  
 
-    <form action="">
+    <form onsubmit="sendMail(); return false">
         <div>
             <h1>GET IN TOUCH</h1>
         </div>
         <div>
-            <label for="input-name">Name</label>
-            <input id= "input-name" type="text" required />
+            <label for="name">Name</label>
+            <input id= "name" type="text" required />
         </div>
         <div>
-            <label for="input-email">Email</label>
-            <input id= "input-email" type="email" required />
+            <label for="email">Email</label>
+            <input id= "email" type="email" required />
         </div>
         <div>
-            <label for="input-phone">Phone Number</label>
-            <input id= "input-phone" type="number" required />
+            <label for="phone">Phone Number</label>
+            <input id= "phone" type="number" required />
         </div>
         <div>
-            <label for="input-subject">Subject</label>
-            <select name="" id="input-subject">
+            <label for="subject">Subject</label>
+            <select name="" id="subject" required>
                 <option value="">-</option>
-                <option value="">Frontend Developer</option>
-                <option value="">Backend Developer</option>
-                <option value="">Fullstack Developer</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Fullstack Developer">Fullstack Developer</option>
             </select>
         </div>
         <div>
-            <label for="input-message">Message</label>
-            <textarea name="" id="input-message" cols="10" rows="5"></textarea>
+            <label for="message">Message</label>
+            <textarea name="" id="message" required cols="10" rows="5"></textarea>
         </div>
         <div class="submit-contact">
             <button>submit</button>

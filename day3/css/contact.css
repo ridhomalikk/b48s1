@@ -1,0 +1,46 @@
+  form {
+    width: 500px;
+    margin: 25px auto;
+  }
+  form h1 {
+    text-align: center;
+  }
+  
+  form button {
+    width: fit-content;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 8px 35px;
+    border-radius: 25px;
+    margin: 20px 0 50px auto;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: orangered;
+    border: 3px solid white;
+    transition: all .3s ease-in-out;
+  }
+  
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  textarea {
+    margin-top: 3px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: #c1c1c1;
+    box-shadow: 0 2px 3px #c1c1c1;
+    resize: none;
+  }
