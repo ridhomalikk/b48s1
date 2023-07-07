@@ -1,0 +1,64 @@
+*{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dce0e4;
+}
+
+nav {
+    background-color: #ebeaea;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-left ul {
+display: flex;
+list-style-type: none;
+align-items: center;
+}
+
+.nav-left ul li {
+    font-size: large;
+    margin-right: 45px;
+}
+
+.nav-left ul li .active {
+    font-weight: bold;
+    color: orangered;
+}
+
+.nav-left ul li a {
+    color: black;
+}
+
+.nav-left ul li a:hover {
+    color:  orangered;
+}
+
+.nav-left {
+    flex: 50%;
+}
+
+.nav-right {
+    flex: 50%;
+    text-align: end;
+    margin-right: 45px;
+}
+
+.nav-right a {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+.nav-right a:hover {
+    background-color: orangered;
+    transition: all .3s ease-in-out;
+}
