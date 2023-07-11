@@ -106,7 +106,7 @@ function emptyFormAlert() {
               </p>
             </div>
   
-            <div class="icons">
+            <div class="card-technologies">
               ${dataProject[index].nodejs}
               ${dataProject[index].vuejs}
               ${dataProject[index].reactjs}
